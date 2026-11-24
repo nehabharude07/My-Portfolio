@@ -6,3 +6,4 @@ flask-wtf
 flask-talisman
 Flask-Limiter
 Flask-Mail
+requests>=2.31.0
