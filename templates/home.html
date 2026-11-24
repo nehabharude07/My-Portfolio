@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neha Bharule — AI/ML Engineer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/home.css') }}">
+
+    <!-- Font Awesome (for footer/social icons) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">
+            <a href="{{ url_for('home') }}">
+                Neha Bharule
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('home') }}">Home</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('aboutme') }}">About</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('projects_page') }}">Projects</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('info') }}">Info</a>
+            </li>
+
+            {% if session.get('user') %}
+            <li>
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="{{ url_for('login') }}">Login</a>
+            </li>
+            {% endif %}
+        </ul>
+
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero-section">
+
+    <div class="hero-inner">
+
+        <div class="hero-left">
+
+            <span class="tag">
+                Data Analyst & Scientist
+            </span>
+
+            <h1 class="hero-heading">
+                Hello, I'm <br>
+                <span class="accent">
+                    Neha Bharule
+                </span>
+            </h1>
+
+            <p class="hero-bio">
+            Data Analyst, Data Scientist and AI/ML Engineer with a passion for transforming data into actionable insights and building intelligent systems. With expertise in machine learning, deep learning, computer vision and data engineering, I create innovative solutions that drive business value and solve real-world problems.  
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="{{ url_for('projects_page') }}"
+                   class="btn-main">
+                    View Projects
+                </a>
+
+                <a href="{{ url_for('contact') }}"
+                   class="btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+<div class="hero-right">
+    <div class="avatar-box">
+        <img src="{{ url_for('static', filename='images/profile.png') }}"
+             alt="Neha Bharule">
+    </div>
+</div>
+    </div>
+
+</section>
+  <!-- ========== SKILL CARDS - COMPLETE ========== -->
+<section class="cards-section">
+  <div class="cards-grid">
+
+    <!-- Core Programming & Tools -->
+    <div class="skill-card">
+      <h3>Python & SQL</h3>
+      <p>Expert-level Python programming with strong SQL database skills. Git & GitHub for version control and collaboration.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Machine Learning</h3>
+      <p>End-to-end ML pipelines using Scikit-Learn, model evaluation, feature engineering and hyperparameter tuning.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Deep Learning</h3>
+      <p>Neural networks, CNNs, RNNs, LSTMs with TensorFlow & PyTorch. Advanced model optimization and training.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Natural Language Processing</h3>
+      <p>NLP fundamentals, text preprocessing, sentiment analysis using Hugging Face Transformers and NLTK.</p>
+    </div>
+
+    <!-- Generative AI & Advanced -->
+    <div class="skill-card">
+      <h3>Generative AI & LLMs</h3>
+      <p>Working with Large Language Models, prompt engineering, fine-tuning and building AI-powered applications.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>RAG & Vector Embeddings</h3>
+      <p>Retrieval-Augmented Generation, vector databases, semantic search and embedding models for intelligent systems.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI Agents & Automation</h3>
+      <p>Building autonomous AI agents, intelligent automation systems and AI solution architecture for complex problems.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Recommendation Systems</h3>
+      <p>Collaborative filtering, content-based filtering and hybrid recommendation algorithms using ML techniques.</p>
+    </div>
+
+    <!-- Data Engineering & Analytics -->
+    <div class="skill-card">
+      <h3>Data Engineering & ETL</h3>
+      <p>Building ETL pipelines, data preprocessing, data cleaning and efficient data workflows with Pandas & NumPy.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Exploratory Data Analysis</h3>
+      <p>Statistical analysis, data visualization, pattern discovery and data-driven insights using Python and Power BI.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Data Visualization & BI</h3>
+      <p>Interactive dashboards using Power BI, Matplotlib, Seaborn. Transforming raw data into actionable visual insights.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Feature Engineering</h3>
+      <p>Advanced feature selection, creation and transformation techniques for improving model performance and accuracy.</p>
+    </div>
+
+    <!-- Frameworks & Libraries -->
+    <div class="skill-card">
+      <h3>ML Frameworks Mastery</h3>
+      <p>Expert in Scikit-Learn, TensorFlow, PyTorch with proficiency in Hugging Face and advanced transformer architectures.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Backend & Web Frameworks</h3>
+      <p>Flask for building APIs and lightweight applications. RESTful API development and integration with ML models.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>MLOps & Deployment</h3>
+      <p>Model versioning with MLflow, Docker containerization, production deployment and monitoring of AI solutions.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Model Evaluation & Metrics</h3>
+      <p>Comprehensive model evaluation, performance metrics, cross-validation and A/B testing for production systems.</p>
+    </div>
+
+    <!-- Big Data & Advanced Tools -->
+    <div class="skill-card">
+      <h3>Big Data Technologies</h3>
+      <p>Familiar with Apache Spark and Databricks for distributed computing, large-scale data processing and analytics.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI Solution Architecture</h3>
+      <p>Designing scalable AI solution architecture. Deployment strategies, microservices and production-ready systems.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Problem Solving & Research</h3>
+      <p>Strong analytical thinking, research skills and ability to solve complex problems with data-driven insights.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Prompt Engineering</h3>
+      <p>Advanced prompt design, instruction tuning, context optimization for maximum performance from LLMs and AI models.</p>
+    </div>
+
+  </div>
+</section>
+
+  <section class="tech-section">
+    <div class="tech-inner">
+
+        <h2 class="tech-title">Technical Skills</h2>
+        <p class="tech-sub">Core proficiencies and competency levels.</p>
+
+        <div class="bars-grid">
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Python</span>
+                    <span>95%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="95%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Data Engineering</span>
+                    <span>92%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="92%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Machine Learning</span>
+                    <span>88%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="88%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>SQL</span>
+                    <span>85%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="85%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Deep Learning</span>
+                    <span>80%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="80%"></div>
+                </div>
+            </div>
+            
+            
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Statistics and Probability</span>
+                    <span>78%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="78%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>Power BI</span>
+                    <span>92%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="92%"></div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">
+                    <span>AWS / GCP</span>
+                    <span>75%</span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="75%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+  <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <h2 class="footer-name">
+            Neha Bharule
+        </h2>
+
+        <p class="footer-text">
+            AI/ML Engineer | Data Analyst | Data Scientist
+        </p>
+
+        <div class="footer-links">
+
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('aboutme') }}">About</a>
+            <a href="{{ url_for('projects_page') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/nehabharude07"
+               target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/nehabharule-474b4522b"
+               target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:nehabharude07@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2025 Neha Bharule. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/skills.js') }}"></script>
+<script src="{{ url_for('static', filename='js/animate_app.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bars.js') }}"></script>
+
+</body>
+</html>

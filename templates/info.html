@@ -1,0 +1,245 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/info.css') }}">
+
+<section class="info-section">
+
+    <!-- HERO -->
+    <div class="info-hero">
+
+        <span class="info-tag">
+            AI Engineer • Data Scientist • ML Engineer
+        </span>
+
+        <h1>
+            Professional <span class="highlight">Overview</span>
+        </h1>
+
+        <p>
+            Passionate AI & Data Science professional focused on building
+            intelligent systems, scalable machine learning solutions,
+            data-driven applications, and impactful real-world products.
+        </p>
+
+        <div class="info-actions">
+            <a href="{{ url_for('download_resume') }}" class="info-download-btn">
+                <i class="fas fa-download"></i>
+                Download Resume
+            </a>
+            <a href="{{ url_for('resume') }}" target="_blank" class="info-view-btn">
+                <i class="fas fa-eye"></i>
+                View Resume
+            </a>
+        </div>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="info-container">
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <div class="info-card">
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                Passionate AI/ML Engineer and Data Science professional with hands-on experience in Machine Learning, Deep Learning, Data Analytics, Recommendation Systems, Computer Vision, Data Engineering, and Full Stack Development. Skilled in transforming complex datasets into actionable insights, designing predictive models, and developing scalable AI-powered applications that solve real-world business challenges. Experienced in the complete machine learning lifecycle, including data collection, preprocessing, feature engineering, model development, evaluation, deployment, and performance optimization.
+
+Proficient in Python, SQL, TensorFlow, PyTorch, Scikit-Learn, Flask, FastAPI, MongoDB, PostgreSQL, and modern cloud technologies. Strong understanding of statistical analysis, data visualization, model optimization, and API integration, enabling the development of robust and production-ready intelligent systems.
+
+Successfully developed and deployed projects across multiple domains, including recommendation systems, fraud detection, cyberattack detection, AQI prediction, railway navigation systems, and AI-powered web applications. </p>
+
+        </div>
+
+        <!-- CORE SKILLS -->
+        <div class="info-card">
+
+            <h2>Core Competencies</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-item">
+                    Machine Learning
+                </div>
+
+                <div class="skill-item">
+                    Deep Learning
+                </div>
+
+                <div class="skill-item">
+                    Data Analytics
+                </div>
+
+                <div class="skill-item">
+                    Computer Vision
+                </div>
+
+                <div class="skill-item">
+                    Recommendation Systems
+                </div>
+
+                <div class="skill-item">
+                    MLOps
+                </div>
+
+                <div class="skill-item">
+                    Data Engineering
+                </div>
+
+                <div class="skill-item">
+                    API Development
+                </div>
+
+                <div class="skill-item">
+                    Predictive Modeling
+                </div>
+
+                <div class="skill-item">
+                    Neural Networks
+                </div>
+
+                <div class="skill-item">
+                    Problem Solving & Analytical Thinking
+                </div>
+
+                <div class="skill-item">
+                    ETL Pipelines
+                </div>
+
+                <div class="skill-item">
+                    Feature Engineering
+                </div>
+
+                <div class="skill-item">
+                    Model Evaluation
+                </div>
+
+                <div class="skill-item">
+                    Scalable Solutions
+                </div>
+
+                <div class="skill-item">
+                    Database Management (SQL & NoSQL)
+                </div>
+
+                 <div class="skill-item">
+                    Model Deployment
+                </div>
+
+                 <div class="skill-item">
+                    Reporting
+                </div>
+
+                 <div class="skill-item">
+                    Continuous Learning
+                </div>
+
+                 <div class="skill-item">
+                    Full Stack Web Application Development
+                </div>
+
+                 <div class="skill-item">
+                   Data Visualization
+                </div>
+
+                 <div class="skill-item">
+                    Business Intelligence
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="info-card">
+
+            <h2>Technical Skills</h2>
+
+            <div class="tech-grid">
+
+                <div class="tech-box">
+                    <h3>Programming</h3>
+                    <p>Python, SQL, JavaScript</p>
+                </div>
+
+                <div class="tech-box">
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-Learn, TensorFlow, PyTorch</p>
+                </div>
+
+                <div class="tech-box">
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, NumPy, Power BI, Tableau</p>
+                </div>
+
+                <div class="tech-box">
+                    <h3>Backend</h3>
+                    <p>Flask, FastAPI, REST APIs</p>
+                </div>
+
+                <div class="tech-box">
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </div>
+
+                <div class="tech-box">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Docker, GitHub, CI/CD</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="info-card">
+
+            <h2>Professional Experience</h2>
+
+            <ul>
+                <li>Junior Data Scientist – Denk Fabric Tech</li>
+                <li>ML Specialist – Invisible Technologies</li>
+                <li>Developed AI-powered predictive systems and recommendation engines.</li>
+                <li>Worked on data preprocessing, model development and deployment.</li>
+            </ul>
+
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="info-card">
+
+            <h2>Featured Projects</h2>
+
+            <ul>
+                <li>Railway Navigation System</li>
+                <li>AQI Prediction System</li>
+                <li>Movie Recommendation System</li>
+                <li>Cyber Attack Detection System</li>
+                <li>AI-Powered Portfolio & Resume Platform</li>
+            </ul>
+
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="info-card">
+
+            <h2>Achievements & Certifications</h2>
+
+            <ul>
+                <li>Top Performer in AI & Data Science Projects</li>
+                <li>IBM Data Analytics Certification</li>
+                <li>AWS Machine Learning Learning Path</li>
+                <li>5000+ Professional Community Reach</li>
+                <li>National Level Technical Competition Participation</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

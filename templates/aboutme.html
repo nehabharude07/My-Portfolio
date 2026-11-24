@@ -1,0 +1,154 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+<section class="about-section">
+
+<div class="about-container">
+
+    <!-- LEFT SIDE -->
+    <div class="about-left">
+
+        <!-- INTRO CARD -->
+        <div class="glass-card intro-card">
+
+            <span class="tag">AI Engineer • Data Scientist • ML Engineer</span>
+
+            <h1>
+                Hi, I'm <span class="gradient-text">Neha Bharule</span>
+            </h1>
+
+            <p>
+                Passionate AI & Data Science Engineer with expertise in Machine Learning,
+                Deep Learning, Data Analytics, Computer Vision, and Full-Stack Development.
+                I specialize in building intelligent applications that transform raw data
+                into meaningful business insights and scalable AI solutions.
+            </p>
+
+            <div class="about-buttons">
+                <a href="{{ url_for('projects_page') }}" class="btn-main">
+                    Explore Projects
+                </a>
+
+                <a href="{{ url_for('contact') }}" class="btn-outline-custom">
+                    Hire Me
+                </a>
+            </div>
+
+        </div>
+
+        <!-- INFORMATION GRID -->
+        <div class="info-grid">
+
+            <div class="glass-card small-card">
+                <h3>Professional Summary</h3>
+                <p>AI/ML Engineer focused on predictive analytics, recommendation systems, intelligent automation and real-world AI applications.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Industry Experience</h3>
+                <p>Worked as Junior Data Scientist and ML Specialist, contributing to data-driven solutions and AI-powered products.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Machine Learning</h3>
+                <p>Regression, Classification, Clustering, Feature Engineering, Hyperparameter Tuning and Ensemble Learning.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Deep Learning</h3>
+                <p>CNN, RNN, LSTM, Transformers, Computer Vision and Neural Network Optimization.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Programming & Tools</h3>
+                <p>Python, SQL, Flask, FastAPI, Git, Docker, MongoDB, PostgreSQL, Power BI and Tableau.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Frameworks & Libraries</h3>
+                <p>TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, OpenCV, Matplotlib and Seaborn.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Featured Projects</h3>
+                <p>Railway Navigation System, AQI Prediction System, Movie Recommender System, Fraud Detection and AI Assistants.</p>
+            </div>
+
+            <div class="glass-card small-card">
+                <h3>Education</h3>
+                <p>B.E. in Artificial Intelligence & Data Science with strong academic performance and practical project experience.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-right">
+
+        <div class="image-card">
+
+            <img src="{{ url_for('static', filename='images/profile.png') }}"
+                 alt="Neha Bharule">
+
+            <div class="profile-info">
+
+                <div class="status-badge">
+                    Open To Opportunities
+                </div>
+
+                <h2>Neha Bharule</h2>
+
+                <h4 class="role">
+                    AI Engineer • Data Scientist • ML Engineer
+                </h4>
+
+                <div class="stats-row">
+
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <span>Projects</span>
+                    </div>
+
+                    <div class="stat">
+                        <h3>3+</h3>
+                        <span>Internships & Roles</span>
+                    </div>
+
+                    <div class="stat">
+                        <h3>12000+</h3>
+                        <span>Community Reach</span>
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/nehabharude07" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+
+                    <a href="https://linkedin.com/in/nehabharule-474b4522b" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+
+                    <a href="mailto:nehabharude07@gmail.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}

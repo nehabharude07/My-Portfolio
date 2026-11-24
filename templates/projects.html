@@ -1,0 +1,297 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/projects.css') }}">
+
+<section class="projects-wrapper">
+
+    <div class="projects-container">
+
+        <div class="projects-header">
+
+            <h1>My Projects 🚀</h1>
+
+            <p>
+                AI, Machine Learning, Computer Vision,
+                Data Science and Full Stack Development Projects
+                built using modern technologies.
+            </p>
+
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <span class="card-badge">AI</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/railway.png') }}" alt="Railway Navigation System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Railway Navigation System</h3>
+
+                    <p>
+                        Real-time indoor railway navigation system
+                        with crowd analytics, platform guidance
+                        and smart route optimization.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/Railway-Navigation-Management-System"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://railway-navigation-system-with-ticket.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
+                <span class="card-badge">AI</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/AI Trading Agent Dashboard.png') }}" alt="Crowd Management System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>AI Treding Agent</h3>
+
+                    <p>
+                    Developed an AI-powered stock trading application using Python and machine learning to analyze market trends and generate trading predictions. Integrated data processing, predictive modeling, and visualization to support data-driven investment decisions.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/AI-Treding-Agent.git"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://ai-trading-agent-7mf6.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <span class="card-badge">ML</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/air.png') }}" alt="AQI Prediction System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>AQI Prediction System</h3>
+
+                    <p>
+                        Machine Learning project for predicting
+                        Air Quality Index using environmental
+                        and pollution datasets.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/AQI_Prediction_System"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://aqi-prediction-system-eyzl.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project-card">
+
+                <span class="card-badge">ML</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/Box Office Revenue Prediction.png') }}" alt="Movie Recommendation System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Boxoffice Revenue Prediction</h3>
+
+                    <p>
+                        Developed a Flask-based Movie Box Office Revenue Prediction application using XGBoost Regression to estimate worldwide movie revenue based on budget, opening performance, and domestic collections. It provides predicted revenue ranges, estimated profit, and revenue-to-budget analysis through an interactive web interface.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/boxoffice.git"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://boxoffice-mcgl.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+                <!-- PROJECT 5 -->
+            <div class="project-card">
+
+                <span class="card-badge">Robotics</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/auto.png') }}" alt="Auto Claw System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Auto Claw System</h3>
+
+                    <p>
+                        An automated claw system that uses
+                        computer vision and machine learning
+                        to identify and pick up objects.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/AutoClaw_Hackathon_new"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://autoclaw-hackathon-new.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+    <!-- PROJECT 6 -->
+
+             <div class="project-card">
+
+                <span class="card-badge">cybersecurity learning platform</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/secure_x lab.png') }}" alt="Auto Claw System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>SecureX Lab</h3>
+
+                    <p>
+                        Cloud-ready cybersecurity learning platform with
+                        interactive labs, quizzes, leaderboard and a
+                        rule-based AI assistant — built using Flask.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/Secure_X-Lab"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://secure-x-lab-1.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+   
+    <!-- PROJECT 7 -->
+
+    
+            <div class="project-card">
+
+                <span class="card-badge">Fraud Alert</span>
+
+                <div class="card-image">
+                    <img src="{{ url_for('static', filename='images/Fraud Detection Web App Dashboard.png') }}" alt="Autism Detection System">
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Fraud Detection WebApp</h3>
+
+                    <p>
+                        Developed a Flask-based Fraud Detection Web Application using machine learning to identify potentially fraudulent transactions and classify suspicious activities. The application provides real-time fraud predictions through an interactive interface, helping improve transaction security and risk assessment.
+                    </p>
+
+                    <div class="card-buttons">
+
+                        <a href="https://github.com/nehabharude07/Fraud-Detection-WebApp.git"
+                           target="_blank" rel="noopener"
+                           class="btn-github">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <a href="https://fraud-detection-webapp.onrender.com"
+                           target="_blank" rel="noopener"
+                           class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i> Live
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

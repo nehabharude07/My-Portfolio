@@ -1,0 +1,8 @@
+Flask>=2.0
+gunicorn>=20.1
+authlib
+python-dotenv
+flask-wtf
+flask-talisman
+Flask-Limiter
+Flask-Mail
